@@ -117,7 +117,7 @@ int main()
     for (auto edge : mst)
     {
         cout << min(edge.from, edge.to) << ' ' <<
-            max(edge.from, edge.to) << ' ' << edge.weight << endl;
+            max(edge.from, edge.to) << "\n";
     }
 
     return 0;
