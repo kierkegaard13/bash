@@ -94,6 +94,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lt='ls -altr'
 alias back='cd -'
+alias lports='netstat -tulpn'
 
 # This is GOLD for finding out what is taking so much space on your drives!
 alias diskspace="du -S | sort -n -r | less"
@@ -170,4 +171,15 @@ swpnm(){
     mv $2 'tmp_dir_5987a'
     mv $1 $tmp2
     mv 'tmp_dir_5987a' $tmp1
+}
+
+openport(){
+    sudo fuser -k $1/tcp
+}
+
+compile(){
+    if [[ $1 == *.cpp ]]
+    then
+        g++ -std=c++11 -Wall -O -o $2 $1
+    fi
 }

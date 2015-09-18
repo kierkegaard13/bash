@@ -1,5 +1,7 @@
 execute pathogen#infect()
 filetype plugin indent on
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 "color
 set nu
