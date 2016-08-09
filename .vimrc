@@ -60,6 +60,8 @@ nmap <C-n> :tabp<Enter>
 " Useful
 set wildmenu
 set showmatch
+set lazyredraw
+set backspace=indent,eol,start
 nnoremap j gj
 nnoremap k gk
 nmap <F12> :tabedit ~/.vimrc<Enter>
