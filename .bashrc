@@ -95,6 +95,8 @@ alias l='ls -CF'
 alias lt='ls -altr'
 alias back='cd -'
 alias lports='netstat -tulpn'
+alias git_resync='git reset HEAD~3 --hard;git clean -f -d;git stash;git pull upstream master;git push -f'
+alias git_log='git log --decorate --graph'
 
 # This is GOLD for finding out what is taking so much space on your drives!
 alias diskspace="du -S | sort -n -r | less"
